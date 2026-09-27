@@ -63,7 +63,7 @@ do itheta=0,100
      x(m)= xst+(m-1)*dx
      xx(m)=x(m)
      xx(m)=x(m)*exp(zi*theta)
-     vv(m)=(1.0d0-(1.0d0/((cosh(xx(m)))**2)))*exp(-0.050d0*xx(m)**2)
+     vv(m)=(1.0d0-(1.0d0/((cosh(xx(m)))**2)))*exp(-0.0250d0*xx(m)**2)
      to(m,m)=to(m,m)+vv(m)
      write(99,*)x(m),real(vv(m)),aimag(vv(m));call flush(10)
   end do
